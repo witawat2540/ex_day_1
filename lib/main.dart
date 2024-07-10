@@ -1,5 +1,8 @@
 import 'package:ex_day1/grid_page.dart';
 import 'package:ex_day1/image_page.dart';
+import 'package:ex_day1/page_one.dart';
+import 'package:ex_day1/page_two.dart';
+import 'package:ex_day1/web_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,11 +18,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const PageOne(),
+        "/two": (context) => const PageTwo(),
+        "/web_flutter": (context) => const WebFlutter()
+      },
       theme: ThemeData(
           primarySwatch: Colors.blue,
           useMaterial3: true,
           textTheme: GoogleFonts.kanitTextTheme()),
-      home: const GridPage(),
+      // home: const PageOne(),
     );
   }
 }
