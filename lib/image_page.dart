@@ -14,10 +14,22 @@ class ImagePage extends StatelessWidget {
           Image.asset(
             'image/pic_ex.jpg',
           ),
-          Image.network(
-            'https://cdn.pixabay.com/photo/2023/06/04/09/00/brown-8039180_1280.jpg',
-            height: 200,
-          )
+          Row(
+            children: [
+              Image.network(
+                'https://cdn.pixabay.com/photo/2023/06/04/09/00/brown-8039180_1280.jpg',
+                height: 200,
+              ),
+            ],
+          ),
+          const Positioned(
+            right: 20,
+            top: 50,
+            child: Icon(
+              Icons.add_circle_outline_sharp,
+              size: 100,
+            ),
+          ),
         ],
       ),
       // body: SingleChildScrollView(
