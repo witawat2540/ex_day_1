@@ -15,8 +15,8 @@ class PageTwo extends StatelessWidget {
             Navigator.pop(context);
           },
           style: ElevatedButton.styleFrom(
-            primary: Colors.brown,
-            onPrimary: Colors.white,
+            backgroundColor: Colors.brown,
+            foregroundColor: Colors.white,
           ),
           child: const Text("Back"),
         ),

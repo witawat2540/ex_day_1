@@ -1,4 +1,3 @@
-import 'package:ex_day1/page_two.dart';
 import 'package:flutter/material.dart';
 
 class PageOne extends StatelessWidget {
@@ -24,8 +23,8 @@ class PageOne extends StatelessWidget {
             // Navigator.pushReplacementNamed(context, '/two');
           },
           style: ElevatedButton.styleFrom(
-            primary: Colors.brown,
-            onPrimary: Colors.white,
+            backgroundColor: Colors.brown,
+            foregroundColor: Colors.white,
           ),
           child: const Text("Next to page two"),
         ),

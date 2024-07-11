@@ -1,5 +1,3 @@
-import 'package:ex_day1/grid_page.dart';
-import 'package:ex_day1/image_page.dart';
 import 'package:ex_day1/page_one.dart';
 import 'package:ex_day1/page_two.dart';
 import 'package:ex_day1/web_flutter.dart';
